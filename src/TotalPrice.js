@@ -11,7 +11,7 @@ function TotalPrice(props) {
         <div className="summary__option__label">{feature} </div>
         <div className="summary__option__value">{selectedOption.name}</div>
         <div className="summary__option__cost">
-          {props.USCurrencyFormat.format(selectedOption.cost)}
+          {props.currencyFormat.format(selectedOption.cost)}
         </div>
       </div>
     );
@@ -28,7 +28,7 @@ function TotalPrice(props) {
     <div className="summary__total">
       <div className="summary__total__label">Total</div>
       <div className="summary__total__value">
-        {props.USCurrencyFormat.format(total)}
+        {props.currencyFormat.format(total)}
       </div>
     </div>
   </section>

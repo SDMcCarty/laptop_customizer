@@ -50,13 +50,13 @@ class App extends Component {
         <main>
           <CustomizeLaptop 
             features={this.props.features}
-            USCurrencyFormat={USCurrencyFormat}
+            currencyFormat={USCurrencyFormat}
             updateFeature={this.updateFeature}
             selected={this.state.selected}
           />
           <TotalPrice
             features={this.props.features}
-            USCurrencyFormat={USCurrencyFormat}
+            currencyFormat={USCurrencyFormat}
             selected={this.state.selected}
           />
         </main>
