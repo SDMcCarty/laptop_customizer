@@ -1,4 +1,5 @@
 import React from 'react';
+import Total from './Total';
 
 function TotalPrice(props) {
   // Total
@@ -16,11 +17,11 @@ function TotalPrice(props) {
       </div>
     );
   });
-//calculates total
-  const total = Object.keys(props.selected).reduce(
-    (acc, curr) => acc + props.selected[curr].cost,
-    0
-  );
+// //calculates total
+//   const total = Object.keys(props.selected).reduce(
+//     (acc, curr) => acc + props.selected[curr].cost,
+//     0
+//   );
   return (
     <section className="main__summary">
     <h2>Your cart</h2>
@@ -28,7 +29,11 @@ function TotalPrice(props) {
     <div className="summary__total">
       <div className="summary__total__label">Total</div>
       <div className="summary__total__value">
-        {props.currencyFormat.format(total)}
+        {/* {props.currencyFormat.format(total)} */}
+        <Total 
+          currencyFormat={props.currencyFormat}
+          selected={props.selected}
+        />
       </div>
     </div>
   </section>
