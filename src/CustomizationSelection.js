@@ -27,6 +27,7 @@ function CustomizationSelection(props) {
         </div>
       );
     });
+    
 // fieldset for Procesor/OS/VC/Display
     return (
       <fieldset className="feature" key={featureHash}>
@@ -37,6 +38,7 @@ function CustomizationSelection(props) {
       </fieldset>
     );
   });
+  
   return (
     <section>{features}</section>
   )
